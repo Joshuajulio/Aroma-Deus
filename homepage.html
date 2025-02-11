@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Deus - Home</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ephesis&family=Imperial+Script&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-[#FEFAF6]">
+  <!-- Navbar -->
+  <nav class="bg-[#370A40] shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="homepage.html">
+        <h1 class="text-5xl font-extrabold text-[#F9DC7C] imperial-script-regular">Aroma Deus</h1>
+      </a>
+      <a href="login.html">
+        <button class="bg-[#FEFAF6] font-bold py-3 px-6 hover:bg-[#758694] text-[#405D72] hover:text-white ">
+          Sign In
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+    <!-- Search Bar -->
+    <div class="mb-6">
+      <input type="text" placeholder="Search perfumes..."
+        class="w-full border border-[#758694] rounded-lg py-3 px-4 text-lg bg-white text-[#405D72] focus:outline-none focus:ring-2 focus:ring-[#405D72]">
+    </div>
+
+    <div class="flex flex-col md:flex-row">
+      <!-- Filter Sidebar -->
+      <div class="w-full md:w-1/4 mb-4 md:mb-0 md:mr-4">
+        <div class="bg-white rounded-lg shadow p-4">
+          <h2 class="text-xl font-bold mb-4 text-[#405D72]">Filters</h2>
+          <div class="mb-4">
+            <label class="block mb-2 text-[#758694]">Brand</label>
+            <select class="w-full border border-[#758694] rounded py-2 px-3 text-[#405D72]">
+              <option>All Brands</option>
+              <option>HMNS</option>
+              <option>Project 1945</option>
+              <option>YSL</option>
+              <option>Dior</option>
+              <option>Chanel</option>
+              <option>Montblanc</option>
+              <option>Bvlagari</option>
+              <option>HMNS</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div class="mb-4">
+            <label class="block mb-2 text-[#758694]">Price Range</label>
+            <select class="w-full border border-[#758694] rounded py-2 px-3 text-[#405D72]">
+              <option>All Price</option>
+              <option>~Rp. 500,000</option>
+              <option>Rp. 500,000 - Rp. 1.000.000</option>
+              <option>Rp. 1.000,000 - Rp. 2.000.000</option>
+              <option>Rp. 2.000,000 - Rp. 3.000.000</option>
+              <option>Rp. 3.000,000 - Rp. 4.000.000</option>
+              <option>Rp. 4.000,000 - Rp. 5.000.000</option>
+              <option>Rp. 5.000.000~</option>
+              <!-- Add more options here -->
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2 text-[#758694]">Sort By</label>
+            <select class="w-full border border-[#758694] rounded py-2 px-3 text-[#405D72]">
+              <option>Popularity</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Perfume Cards -->
+      <div class="w-full md:w-3/4 overflow-y-auto max-h-[810px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Example Card -->
+          <div class="bg-white rounded-lg shadow-md card" onclick="window.location.href='detail.html'">
+            <img src="https://madeforhmns.com/cdn/shop/files/Addict-3.png?v=1718072138" alt="Perfume Image"
+              class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Addict</h2>
+              <p class="text-[#758694]">HMNS</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img src="https://down-my.img.susercontent.com/file/my-11134207-7r98t-lxf0zfkj4zn4e5" alt="Perfume Image"
+              class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Fields of Ubud</h2>
+              <p class="text-[#758694]">Project 1945</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img
+              src="https://assets.ongoody.com/store/products/image/IFK7IUNty7QHpTP0uEDNeJiy8L6ghWbc.png?width=800&format=webp"
+              alt="Perfume Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Black Opium</h2>
+              <p class="text-[#758694]">YSL</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img src="https://www.lmching.com/cdn/shop/files/D_anm_i-1753_540x.jpg?v=1692721820" alt="Perfume Image"
+              class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Libre</h2>
+              <p class="text-[#758694]">YSL</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img src="https://redolencenpl.com/wp-content/uploads/2024/07/63-12.png" alt="Perfume Image"
+              class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Homme Intense</h2>
+              <p class="text-[#758694]">Dior</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img
+              src="https://perfumeheadquarters.com/cdn/shop/files/christian-dior-jadore-gift-set-3348901617673-471138.jpg?v=1717637814&width=1445"
+              alt="Perfume Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">J'adore</h2>
+              <p class="text-[#758694]">Dior</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img
+              src="https://www.colombiaroyalparfums.store/cdn/shop/files/imagen_2024-11-04_160723152.png?v=1730754445&width=1445"
+              alt="Perfume Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">No. 5 Eau de Parfum</h2>
+              <p class="text-[#758694]">Chanel</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img src="https://yourperfumeshop.co.uk/cdn/shop/articles/bleu-de-chanel-advert-parfum.png?v=1717604981"
+              alt="Perfume Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Bleu de Chanel</h2>
+              <p class="text-[#758694]">Chanel</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md card">
+            <img src="https://cdn.parfumdreams.de/Img/Art/5/Montblanc-Legend-Night-Eau-de-Parfum-Spray-68955x4_5.jpg"
+              alt="Perfume Image" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-bold text-[#405D72]">Legend Night</h2>
+              <p class="text-[#758694]">Brand Name</p>
+              <p class="text-[#405D72] font-semibold">Rp. 1.500.000</p>
+            </div>
+          </div>
+
+          <!-- Repeat cards as needed -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-between border-t border-[#758694] bg-[#FEFAF6] px-4 py-3 sm:px-6 mt-6">
+          <div class="flex flex-1 justify-between sm:hidden">
+            <a href="#"
+              class="relative inline-flex items-center rounded-md border border-[#758694] bg-white px-4 py-2 text-sm font-medium text-[#405D72] hover:bg-[#F7E7DC]">Previous</a>
+            <a href="#"
+              class="relative ml-3 inline-flex items-center rounded-md border border-[#758694] bg-white px-4 py-2 text-sm font-medium text-[#405D72] hover:bg-[#F7E7DC]">Next</a>
+          </div>
+          <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+            <div>
+              <p class="text-sm text-[#758694]">
+                Showing
+                <span class="font-medium">1</span>
+                to
+                <span class="font-medium">9</span>
+                of
+                <span class="font-medium">15</span>
+                results
+              </p>
+            </div>
+            <div>
+              <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                <a href="#"
+                  class="relative inline-flex items-center rounded-l-md px-2 py-2 text-[#758694] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">
+                  <span class="sr-only">Previous</span>
+                  <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="#" aria-current="page"
+                  class="relative z-10 inline-flex items-center bg-[#405D72] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#405D72]">1</a>
+                <a href="#"
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#405D72] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">2</a>
+                <a href="#"
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#405D72] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">3</a>
+                <span
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
+                <a href="#"
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#405D72] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">8</a>
+                <a href="#"
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#405D72] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">9</a>
+                <a href="#"
+                  class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#405D72] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">10</a>
+                <a href="#"
+                  class="relative inline-flex items-center rounded-r-md px-2 py-2 text-[#758694] ring-1 ring-inset ring-[#758694] hover:bg-[#F7E7DC] focus:z-20 focus:outline-offset-0">
+                  <span class="sr-only">Next</span>
+                  <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd"
+                      d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#370A40] shadow mt-3">
+    <div class="container mx-auto px-4 py-4">
+      <p class="text-center text-white">© 2024 Aroma Deus. All rights reserved.</p>
+      <p class="text-center text-white">Designed by Juang.site</p>
+    </div>
+  </footer>
+</body>
+
+</html>

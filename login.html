@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumery CMS - Login</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#0B192C] min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <a href="homepage.html">
+                <h1 class="text-5xl font-extrabold text-[#F9DC7C] font-['Ephesis']">Perfumery</h1>
+            </a>
+            <h1 class="text-2xl font-bold text-[#370A40] flex-grow text-center">Content Management Service</h1>
+            <h1 class="text-2xl font-bold text-white">Perfumery</h1>
+        </div>
+    </nav>
+    <!-- Login Form Container -->
+    <div class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-[#370A40]">
+                    Sign in to Perfumery CMS
+                </h2>
+                <p class="mt-2 text-center text-sm text-[#758694]">
+                    Admin and Staff Access Only
+                </p>
+            </div>
+            <form class="mt-8 space-y-6" action="dashboard.html">
+                <div class="rounded-md shadow-sm space-y-6">
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" name="email" type="email"
+                            class="appearance-none rounded-md relative block w-full px-4 py-4 border border-[#758694] placeholder-[#758694] text-[#405D72]"
+                            placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input id="password" name="password" type="password"
+                            class="appearance-none rounded-md relative block w-full px-4 py-4 border border-[#758694] placeholder-[#758694] text-[#405D72]"
+                            placeholder="Password">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full flex justify-center py-4 px-6 border border-transparent text-base font-medium rounded-md text-white bg-[#370A40] hover:bg-[#758694]">
+                        Sign in
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
